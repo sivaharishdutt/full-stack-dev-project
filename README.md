@@ -8,3 +8,5 @@ you need
 4.a server, i used tomcat
 
 change your username and pwd in hibernate file for linking to mysql.
+
+use case 8.6
