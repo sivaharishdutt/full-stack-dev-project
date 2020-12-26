@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Students - Courses</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Trirong">
+    <style>
+        body {
+            background-image: url("assets/svg/My-IIITB.jpg");
+            background-repeat: no-repeat;
+        }
+    </style>
+</head>
+<body>
+<div class="container">
+    <div class="py-5 text-center bg">
+     <img alt="" class="d-block mx-auto mb-4" width="100" height="100" src="assets/svg/index.png" width="72">
+        <h1 class="heading" >Placecomm</h1>
+    </div>
+
+    <div class="col-md-8  detail ">
+        <h2 class="mb-3" style="font-family: Verdana ">Login</h2>
+         <form class="needs-validation-students" id="login-validation" >
+         <div class="mb-3">
+            <label for="email">Email</label>
+            <input class="form-control" id="email" placeholder="example@iiitb.org" required type="email">
+
+        </div>
+        <div class="mb-3">
+            <label >Password</label>
+            <input class="form-control" id="password" placeholder="" required type="password">
+
+        </div>
+
+             <hr class="mb-4">
+
+         <div class="btn-group btn-block">
+             <button  class="btn btn-primary btn-lg btn-block " type="submit">Login</button>
+<!--             <button style='margin-right:20px;margin-left:20px' type="submit" class="btn btn-primary btn-large btn1"> Login </button>-->
+             <a href="register.html" style='margin-right:20px' role="button" class="btn btn-primary btn-large btn2">Register</a>
+             <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                 Invalid Credentials Entered!!
+             </div>
+             <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                 Login Successfull!!
+             </div>
+         </div>
+         </form>
+</div>
+</div>
+
+
+<br/>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/login-validation.js"></script>
+</html>

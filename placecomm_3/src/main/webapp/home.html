@@ -1,0 +1,146 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>home</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation2.css" rel="stylesheet">
+    <style>
+        table, th, td {
+            border: 1px solid #000000;
+            border-collapse: collapse;
+        }
+
+        th, td {
+            padding: 5px;
+            text-align: left;
+        }
+
+        table {
+            margin: 20px auto 20px auto;
+            width: 90%;
+        }
+
+        .container {
+            padding: 2rem 0rem;
+        }
+
+        h4 {
+            margin: 2rem 0rem 1rem;
+        }
+
+
+    </style>
+</head>
+<body>
+<nav class="navbar navbar-light bg-light">
+    <div class="container-fluid">
+        <div class="navbar-brand" href="#">
+            <img src="assets/svg/index.png" alt="" width="55" height="45" class="d-inline-block align-top">
+            <a class="heading" style="font-family: sans-serif;font-size: 27px;color: #1b1e21"> Placecomm </a>
+            <a href="example.html" type="button" class="btn btn-light logout">Logout</a>
+        </div>
+    </div>
+</nav>
+<div class="card-deck container2 ">
+    <div class="card mx-5 effect">
+        <img class="card-img-top" src="assets/svg/student_details.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title">Profile2</h4>
+        </div>
+        <div class="card-footer">
+            <button id="getStudents2" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-l1">
+                View Profile
+            </button>
+            <div class="modal fade bd-example-modal-l1" tabindex="-1" role="dialog"
+                 aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <h2>Student Profile :</h2>
+                        <table id="profile-table">
+
+                        </table>
+                    </div>
+                </div>
+            </div>
+
+        </div>
+    </div>
+    <div class="card mx-5 effect">
+        <img class="card-img-top" src="assets/svg/offers.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title">Companies</h4>
+        </div>
+        <div class="card-footer">
+            <button id="get-comp" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-comp">View Companies
+            </button>
+            <div class="modal fade bd-example-modal-comp" tabindex="-1" role="dialog"
+                 aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <h2>Companies List :</h2>
+                        <form class="needs-validation-students" id="companies-form">
+                            <table class="table table-bordered" style="width: 90%">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Select Company</th>
+                                    <th scope="col">company_name</th>
+                                    <th scope="col">ctc</th>
+                                    <th scope="col">cgpa</th>
+                                    <th scope="col">intake</th>
+                                </tr>
+                                </thead>
+                                <tbody id="table-body">
+                                </tbody>
+                            </table>
+                            <button class="btn btn-primary btn-lg btn-block " type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="card  mx-5 effect">
+        <img class="card-img-top" src="assets/svg/selected.jpg" alt="Card image cap">
+        <div class="card-body">
+            <h4 class="card-title">Offers</h4>
+        </div>
+        <div class="card-footer">
+            <button id="get-offers" type="button" class="btn btn-primary" data-toggle="modal" data-target=".bd-example-modal-l3">View Offers
+            </button>
+            <div class="modal fade bd-example-modal-l3" tabindex="-1" role="dialog"
+                 aria-labelledby="myExtraLargeModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal-xl">
+                    <div class="modal-content">
+                        <h2>Offers List :</h2>
+                        <form class="needs-validation-students" id="offers-form">
+                            <table class="table table-bordered" style="width: 90%">
+                                <thead>
+                                <tr>
+                                    <th scope="col">Select Company</th>
+                                    <th scope="col">company_name</th>
+                                    <th scope="col">ctc</th>
+                                    <th scope="col">cgpa</th>
+                                    <th scope="col">intake</th>
+                                </tr>
+                                </thead>
+                                <tbody id="offers-table-body">
+                                </tbody>
+                            </table>
+                            <button class="btn btn-primary btn-lg btn-block " type="submit">Submit</button>
+                        </form>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/student-data.js"></script>
+<script src="assets/js/companies-data.js"></script>
+<script src="assets/js/placement-filter.js"></script>
+<script src="assets/js/offers-page.js"></script>
+<script src="assets/js/offers-table.js"></script>
+</html>

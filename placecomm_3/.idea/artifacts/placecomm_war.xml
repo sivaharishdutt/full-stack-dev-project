@@ -1,0 +1,14 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="placecomm:war">
+    <output-path>$PROJECT_DIR$/target</output-path>
+    <properties id="maven-jee-properties">
+      <options>
+        <module>placecomm</module>
+        <packaging>war</packaging>
+      </options>
+    </properties>
+    <root id="archive" name="placecomm-1.0-SNAPSHOT.war">
+      <element id="artifact" artifact-name="placecomm:war exploded" />
+    </root>
+  </artifact>
+</component>

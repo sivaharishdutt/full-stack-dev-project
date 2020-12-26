@@ -1,0 +1,35 @@
+.logout{
+    position: absolute;
+    top: 15px;
+    right: 15px;
+    background-color: #dce3e8;
+    padding-left: 10px;
+    padding-right: 10px;
+}
+
+.heading{
+    padding-left: 10px;
+    padding-right: 10px;
+}
+.detail{
+    padding-top: 25px;
+    padding-left: 200px;
+}
+.container {
+    max-width: 960px;
+    padding-top: 100px;
+
+}
+.container2{
+    padding-left: 40px;
+    padding-right: 40px;
+    padding-top: 100px;
+}
+.effect {
+    width: 250px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    text-align: center;
+}
+.effect2{
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+}

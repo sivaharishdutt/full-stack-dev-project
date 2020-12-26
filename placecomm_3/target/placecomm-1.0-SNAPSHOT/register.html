@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+    <title>login</title>
+    <link href="assets/css/bootstrap.min.css" rel="stylesheet">
+    <link href="assets/css/form-validation.css" rel="stylesheet">
+</head>
+<body class="bg-light">
+<div class="container ">
+    <div class="py-5 text-center">
+        <img alt="" class="d-block mx-auto mb-4" height="72" src="assets/svg/index.png" width="72">
+        <h2>Placecomm Registration</h2>
+    </div>
+
+    <div class="col-md-8 order-md-2 ">
+        <h4 class="mb-3">Student Details</h4>
+        <form class="needs-validation-students" id="student-validation" >
+            <div class="row">
+                <div class="col-md-6 mb-3">
+                    <label for="first_name">First name</label>
+                    <input class="form-control" id="first_name" placeholder="" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid first name is required.
+                    </div>
+                </div>
+                <div class="col-md-6 mb-3">
+                    <label for="last_name">Last name</label>
+                    <input class="form-control" id="last_name" placeholder="" required type="text" value="">
+                    <div class="invalid-feedback">
+                        Valid last name is required.
+                    </div>
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="email">Email id</label>
+                <input class="form-control" id="email" placeholder="name@iiitb.org" required type="email">
+
+                <div class="invalid-feedback">
+                    Please enter a valid email address for updates.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label for="password">Set Password</label>
+                <input class="form-control" id="password" placeholder="Use small,caps & nums" required type="password">
+                <div class="invalid-feedback">
+                    Please enter valid Password.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label >Roll Number</label>
+                <input class="form-control" id="Rollno" placeholder="MT20XXXXX" required type="">
+                <div class="invalid-feedback">
+                    Please enter a valid Rollno.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label >CGPA</label>
+                <input class="form-control" id="cgpa" placeholder="4 grade" required type="number" value="4">
+                <div class="invalid-feedback">
+                    Please enter a valid CGPA.
+                </div>
+            </div>
+            <div class="mb-3">
+                <label id="domain" >Select Domain</label>
+                <select class="custom-select d-block w-100" id="courses" required>
+                    <option value="">value</option>
+                    <option>Networking</option>
+                    <option>AI</option>
+                    <option>VLSI</option>
+                <div class="invalid-feedback">
+                    Please select a valid Domain.
+                </div>
+                </select>
+            </div>
+            <div class="mb-3">
+                <label for="description">Description</label>
+                <input class="form-control" id="description" placeholder="" required type="text">
+                <div class="invalid-feedback">
+                    Please enter a valid description .
+                </div>
+            </div>
+            <hr class="mb-4">
+            <button  class="btn btn-primary btn-lg btn-block " type="submit">Register</button>
+
+            <div class="alert alert-warning" role="alert" id="login-alert" style="display: none; margin-top: 20px">
+                Duplicate Email Address or Rollno!!
+            </div>
+            <div class="alert alert-success" role="alert" id="login-success" style="display: none; margin-top: 20px">
+                Saved successfully!!
+            </div>
+        </form>
+    </div>
+</div>
+<footer class="my-5 pt-5 text-muted text-center text-small">
+</footer>
+</body>
+<script src="assets/js/jquery.min.js"></script>
+<script src="assets/js/bootstrap.min.js"></script>
+<script src="assets/js/form-validation.js"></script>
+</body>
+</html>
